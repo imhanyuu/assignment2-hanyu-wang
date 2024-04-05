@@ -1,0 +1,128 @@
+body {
+    font-family: "Consolas", monospace;
+    background-color: #FEF9E7;
+    background-image: url('https://github.com/imhanyuu/Assignment-2-Hanyu-Wang/blob/main/Assignment%202-Hanyu%20Wang/bg-l.png?raw=true');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 300px;
+}
+
+.image-container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.button-9 {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    font-size: 200%;
+    height: 40px;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    transition: all .2s, box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 25%;
+    display: none; /* Ensure button is initially hidden */
+}
+
+.button-9:disabled {
+    cursor: default;
+}
+
+.button-9:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+#change-background {
+    position: fixed; 
+    top: 20px;
+    left: 20px;
+    max-width: 120px; 
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#hover-image {
+    position: fixed;
+    top: 0;
+    right: 5px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+#board-image {
+    position: fixed;
+    top: 0;
+    right: 200px;
+    max-width: 600px;
+    cursor: pointer;
+}
+
+#image-q {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 100px; 
+    height: auto; 
+    cursor: pointer;
+
+}
+
+#fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    color: #00FF00; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10000;
+    flex-direction: column;
+}
+
+#fullscreen-overlay p {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #0f0f0f;
+    color: #00FF00; 
+    padding: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); 
+    width: auto; 
+    max-width: 80%; 
+    word-wrap: break-word; 
+}
